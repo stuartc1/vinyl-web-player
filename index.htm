@@ -1,0 +1,133 @@
+<!--
+Template: Vinyl-Web-Player
+Author: Stu Cochrane (stuartc1)
+GitHub: https://github.com/stuartc1/vinyl-web-player
+License: MIT
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Demo Tapes - Band</title>
+  <meta name="description"
+    content="Music that only exists in JSON.">
+  <link rel="canonical" href="https://example.com/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "The Demo Tapes",
+    "description": "Music that only exists in JSON.",
+    "genre": ["Indie-Electoronica"],
+    "url": "https://example.com/"
+  }
+  </script>
+
+  <!-- Set theme before paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      // var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      var theme = saved || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&family=Rufina:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=20260711-9">
+</head>
+
+<body>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="brand">
+        <img class="brand-logo" src="assets/images/logo.jpg" alt="The Demo Tapes logo" loading="lazy">
+        <span class="brand-name">The Demo Tapes</span>
+      </div>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round">
+          <circle cx="12" cy="12" r="4.2" />
+          <path
+            d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7" />
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">The Demo Tapes: Music that only exists in JSON</h2>
+      <p>Indie-electoronica music made entirely from JSON data.</p>
+    </section>
+
+    <div id="grid" class="grid" aria-live="polite">
+      <!-- Cards injected by script.js -->
+    </div>
+
+    <p id="empty-state" class="empty-state" hidden>
+      No tracks yet &mdash; add entries to <code>songs.json</code> to get started.
+    </p>
+
+    <section class="social-links" aria-label="Follow The Demo Tapes">
+      <p>Follow for more</p>
+      <ul>
+        <li><a href="https://open.spotify.com/artist/" target="_blank" rel="noreferrer"
+            aria-label="Spotify">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M8.5 10.7c3-1.4 5.5-1.1 7.9 0.3" />
+              <path d="M7.2 13.6c2.7-1.4 5.4-1 7.4 0.3" />
+              <path d="M9.1 16.2c1.9-1 4-0.8 5.4 0.2" />
+            </svg>
+          </a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="5" />
+              <circle cx="12" cy="12" r="3.5" />
+              <path d="M17.5 6.5h.01" />
+            </svg>
+          </a></li>
+        <li><a href="https://tiktok.com/" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M10.5 7.5v9.5c0 1.4 1 2.5 2.4 2.5 0 0 2.6-.2 2.6-2.4V10.4" />
+              <path d="M10.5 13.5c0-1.4-1-2.5-2.4-2.5H7.5v7.5" />
+            </svg>
+          </a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="7" width="18" height="10" rx="3" />
+              <path d="M10 9.5l5 3-5 3v-6z" />
+            </svg>
+          </a></li>
+      </ul>
+    </section>
+
+    <div class="copyright">
+      <p>&copy; 2026 The Demo Tapes. All rights reserved.</p>
+    </div>
+  </main>
+
+  <script src="script.js?v=20260711-9"></script>
+</body>
+
+</html>

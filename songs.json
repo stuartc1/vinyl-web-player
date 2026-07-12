@@ -1,0 +1,26 @@
+[
+  {
+    "image": "assets/covers/late-night-debugger.jpg",
+    "title": "Late Night Debugger",
+    "description": "A synth-driven journey through the neon-lit streets of a digital dystopia. It's a high-octane anthem for anyone who has ever felt lost in the code.",
+    "mp3": "assets/audio/Late-Night-Debugger.mp3"
+  },
+  {
+    "image": "assets/covers/vinyl-dreams.jpg",
+    "title": "Vinyl Dreams",
+    "description": "A nostalgic ode to the golden age of music, where every crackle and pop tells a story. It's a heartfelt tribute to the analog warmth that digital can't replicate.",
+    "mp3": "assets/audio/vinyl-dreams.mp3"
+  },
+  {
+    "image": "assets/covers/null-frequency.jpg",
+    "title": "Null Frequency",
+    "description": "A haunting, atmospheric piece that explores the void between sound and silence. It's a meditation on the spaces we inhabit and the echoes that linger.",
+    "mp3": "assets/audio/null-frequency.mp3"
+  },
+  {
+    "image": "assets/covers/diamond-tracing.jpg",
+    "title": "Diamond Tracing",
+    "description": "A mesmerizing journey through the crystalline landscapes of the digital realm. It's a euphoric escape into a world where data flows like liquid light.",
+    "mp3": "assets/audio/diamond-tracing.mp3"
+  }
+]
