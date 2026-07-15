@@ -1,8 +1,16 @@
 # Vinyl Web Player
 
-A lightweight web audio player built with plain HTML, CSS, and JavaScript. It is designed to feel simple and clean, with a vinyl-inspired animation and no third-party libraries or frameworks.
+A lightweight vinyl‑style music player built with HTML, CSS, and JavaScript. JSON‑powered playlist, retro UI, and live demo featuring my real music.
+
+## See It in Action
+
+You can view a live example of the project on [Boombamason](https://boombamason.com).
+
+
+## Desktop view of the Vinyl Web Player
 
 ![Desktop view of the Vinyl Web Player](docs/screen-desktop.jpg)
+
 
 ## Quick Start
 
@@ -28,9 +36,6 @@ http://localhost:8000/
 - Simple audio playback experience
 - No dependencies on third-party libraries or frameworks
 
-## See It in Action
-
-You can view a live example of the project on [Boombamason](https://boombamason.com).
 
 ## Project Structure
 

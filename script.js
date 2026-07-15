@@ -71,7 +71,7 @@ License: MIT
           <h3 class="track-title">${escapeHtml(song.title)}</h3>
           <p class="track-desc">${escapeHtml(song.description)}</p>
           <div class="audio-wrap">
-            <audio controls controlsList="nodownload noplaybackrate" preload="none">
+            <audio controls controlsList="nodownload noplaybackrate" preload="metadata">
               <source src="${escapeHtml(song.mp3)}" type="audio/mpeg">
               Your browser doesn't support HTML5 audio.
             </audio>
