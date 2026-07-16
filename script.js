@@ -81,6 +81,16 @@ License: MIT
 
       const audioEl = card.querySelector("audio");
       const coverEl = card.querySelector(".cover-wrap");
+      const recordEl = card.querySelector(".record");
+      if (recordEl && song.vinyl) {
+        try {
+          const val = String(song.vinyl).trim();
+          recordEl.style.setProperty("--vinyl-color", val);
+          recordEl.dataset.vinyl = val; // helpful for debugging in DevTools
+        } catch (e) {
+          // ignore invalid values
+        }
+      }
       audioEl.setAttribute("playsinline", "");
 
       function setActiveCard(activeAudioEl) {

@@ -9,7 +9,8 @@
     "image": "assets/covers/vinyl-dreams.jpg",
     "title": "Vinyl Dreams",
     "description": "A nostalgic ode to the golden age of music, where every crackle and pop tells a story. It's a heartfelt tribute to the analog warmth that digital can't replicate.",
-    "mp3": "assets/audio/vinyl-dreams.mp3"
+    "mp3": "assets/audio/vinyl-dreams.mp3",
+    "vinyl": "#1e90ff"
   },
   {
     "image": "assets/covers/null-frequency.jpg",
@@ -21,6 +22,7 @@
     "image": "assets/covers/diamond-tracing.jpg",
     "title": "Diamond Tracing",
     "description": "A mesmerizing journey through the crystalline landscapes of the digital realm. It's a euphoric escape into a world where data flows like liquid light.",
-    "mp3": "assets/audio/diamond-tracing.mp3"
+    "mp3": "assets/audio/diamond-tracing.mp3",
+    "vinyl": "crimson"
   }
 ]

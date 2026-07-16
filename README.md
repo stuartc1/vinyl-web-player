@@ -66,6 +66,28 @@ Each track entry in `songs.json` should point to the correct image and audio fil
 }
 ```
 
+### Vinyl colour
+
+You can optionally set the vinyl disc colour per-track by adding a `vinyl` property to a `songs.json` entry. The player defaults to a black vinyl when the property is not present.
+
+Supported formats:
+- Hex values (e.g. `#ff0000`)
+- CSS colour names (e.g. `crimson`)
+
+Example:
+
+```json
+{
+  "title": "Vinyl Dreams",
+  "description": "A nostalgic ode...",
+  "image": "assets/covers/vinyl-dreams.jpg",
+  "mp3": "assets/audio/vinyl-dreams.mp3",
+  "vinyl": "#1e90ff"
+}
+```
+
+When a track with a `vinyl` colour is played, the spinning record will use the configured colour.
+
 ## Running Locally
 
 This project is a static site, so it can be hosted almost anywhere without a backend. No PHP, Python, ASP, Java, Node.js, or other server-side runtime is required.
