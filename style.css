@@ -423,7 +423,7 @@ a {
   /* subtle highlight, grooves, and vignette as overlays so base colour shows */
   background:
     radial-gradient(circle at 30% 28%, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0.02) 12%, transparent 20%),
-    repeating-conic-gradient(from 0deg, rgba(255, 255, 255, 0.05) 0deg 0.9deg, rgba(0, 0, 0, 0.02) 0.9deg 1.8deg),
+    repeating-radial-gradient(circle at center, rgba(255, 255, 255, 0.05) 0, rgba(255, 255, 255, 0.05) 0.6px, rgba(0, 0, 0, 0.02) 0.6px 1.2px),
     radial-gradient(circle at center, rgba(0, 0, 0, 0.36) 60%, rgba(0, 0, 0, 0) 100%);
   mix-blend-mode: normal;
   opacity: 0.95;
